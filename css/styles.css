@@ -86,7 +86,7 @@ body {
 
 .primary-header {
     --gap: 2.5rem;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
         /* this shoots off the logo img to the left most side and the nav link to the right most side */
     position: sticky;
@@ -97,6 +97,7 @@ body {
     list-style: none;
     margin: 0;
     padding-right: 4rem;
+    margin-bottom: 1.5rem;
 
     background: hsl(184 64% 50%);
     backdrop-filter: blur(1rem);
@@ -138,6 +139,7 @@ body {
 h1 {
     font-family: var(--heading-font-bold);
     font-size: 2rem;
+    display: block;
 }
 
 p {
@@ -185,6 +187,7 @@ img {
         position: fixed;
         inset: 0 0 0 0%;
         padding: min(30vh, 10rem) 2rem;
+        margin: 0;
 
         flex-direction: column;
 
