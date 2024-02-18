@@ -17,8 +17,8 @@ body {
 :root {
     --heading-font-bold: 'Nippo-Bold', sans-serif;
     --heading-font-medium: 'Nippo-Medium', sans-serif;
-    --main-font-bold: 'Supreme-Bold', sans-serif;
-    --main-font-regular: 'Supreme-Regular', sans-serif;
+    --main-font-bold: 'AzeretMono-Bold', sans-serif;
+    --main-font-regular: 'AzeretMono-Regular', sans-serif;
 
     --primary-white: #F6F4F4;
     --white-01: #EFECEC;
@@ -38,38 +38,48 @@ body {
 }
 
 @font-face {
-    font-family: var(--heading-font-bold);
-    src: url('../fonts/Nippo-Bold.woff') format('woff');
-    src: url('../fonts/Nippo-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Nippo-Medium';
+    src: url('../fonts/Nippo-Medium.woff2') format('woff2'),
+         url('../fonts/Nippo-Medium.woff') format('woff'),
+         url('../fonts/Nippo-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
 }
+  
+  
+@font-face {
+    font-family: 'Nippo-Bold';
+    src: url('../fonts/Nippo-Bold.woff2') format('woff2'),
+         url('../fonts/Nippo-Bold.woff') format('woff'),
+         url('../fonts/Nippo-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+}
+
+ 
 
 @font-face {
-    font-family: var(--heading-font-medium);
-    src: url('../fonts/Nippo-Medium.woff') format('woff');
-    src: url('../fonts/Nippo-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-
+    font-family: 'AzeretMono-Bold';
+    src: url('../fonts/AzeretMono-Bold.woff2') format('woff2'),
+         url('../fonts/AzeretMono-Bold.woff') format('woff'),
+         url('../fonts/AzeretMono-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+} 
+  
 @font-face {
-    font-family: var(--main-font-bold);
-    src: url('../fonts/Supreme-Bold.woff') format('woff');
-    src: url('../fonts/Supreme-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: var(--main-font-regular);
-    src: url('../fonts/Supreme-Regular.woff') format('woff');
-    src: url('../fonts/Supreme-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+    font-family: 'AzeretMono-Regular';
+    src: url('../fonts/AzeretMono-Regular.woff2') format('woff2'),
+         url('../fonts/AzeretMono-Regular.woff') format('woff'),
+         url('../fonts/AzeretMono-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
 
 .flex {
     display: flex;
@@ -131,30 +141,62 @@ body {
 
 .primary-navigation a {
     text-decoration: none;
-    font-family: var(--heading-font-medium);
+    font-family: 'Nippo-Medium';
     font-size: 1.25rem;
 }
 
 /* main body */
+.full-width {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#hero-items {
+    grid-area: 1 / 1 / 1 / 7;
+    padding: 2rem 0 2rem 4rem;
+}
+
+#hero-img {
+    grid-area: 1 / 7 / 1 / 13;
+    background-color: var(--blue-02);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    object-fit: cover;
+}
+  
+h1, h2, h3 {
+    font-family: 'Nippo-Bold';
+}
+
 h1 {
-    font-family: var(--heading-font-bold);
-    font-size: 2rem;
-    display: block;
+    font-size: 3rem;
+    margin-bottom: 10;
+    padding: 0;
 }
 
 p {
-    font-family: var(--main-font-regular);
+    font-family: 'AzeretMono-Regular';
     font-size: 1rem;
 }
 
 button {
-    font-family: var(--heading-font-bold);
+    font-family: 'Nippo-Medium';
     font-size: 1rem;
+    margin-top: 2rem;
     padding: 0.8rem 2rem 0.8rem 2rem;
     background-color: var(--gray-01);
     color: var(--dark-01);
     border: none;
-    border-radius: 100px;
+    border-radius: 4px;
 }
 
 section {
@@ -166,12 +208,25 @@ img {
     height: auto;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    object-fit: cover;
+ul {
+margin-left: 0;
+padding-left: 0;
+list-style: none;
 }
+
+ul #feature-item {
+    /*
+    Full width of heart icon = 24px
+    */
+    font-family: 'AzeretMono-Regular';
+    padding-left: 40px;
+    margin-bottom: 1.5rem;
+    line-height: 24px;
+    background-image: url(../assets/heart-icon.svg);
+    background-repeat: no-repeat;
+}
+
+
 
 @media (max-width: 767px) {
     /* main nav */
@@ -199,13 +254,45 @@ img {
     transform: translateX(0%);
     }
 
+    .primary-navigation a {
+        font-size: 2.5rem;
+    }
+
     /* main body */
-    section {
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+
+    #hero-items {
+        grid-area: 1 / 1 / 1 / 7;
+    }
+
+    #hero-img {
+        grid-area: 2 / 1 / 2 / 7;
+        background-color: var(--orange-01);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section, #hero-items {
         padding: 2rem 1rem 2rem 1rem;
     }
 
-    .hero-img {
-        background-color: var(--orange-01);
+    #product-samples {
+        width: 100%;
+        height: 100%;
+        border: 2px solid red;
+        overflow: hidden;
+    }
+
+    .product-samples {
+        width: 1200px;
+        height: auto;
+        position: relative;
+        left: -45%;
     }
 
     /* main-nav icon */
