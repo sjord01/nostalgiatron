@@ -153,15 +153,17 @@ body {
 
 .grid {
     display: grid;
+    /*
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
+    */
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #hero-items {
     grid-area: 1 / 1 / 1 / 7;
-    padding: 2rem 0 2rem 4rem;
+    padding: 2rem 1rem 2rem 4rem;
 }
 
 #hero-img {
@@ -173,14 +175,30 @@ body {
     object-fit: cover;
 }
   
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Nippo-Bold';
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 10;
-    padding: 0;
+    margin: 2px 0 10px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 2px 0 10px 0;
+}
+
+h3 {
+    font-size: 2.25rem;
+    margin: 2px 0 4px 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 2px 0 4px 0;
 }
 
 p {
@@ -226,7 +244,45 @@ ul #feature-item {
     background-repeat: no-repeat;
 }
 
+#hero-feature {
+    grid-area: 1 / 7 / 1 / 13;
+    padding: 2rem 4rem 2rem 1rem;
+}
 
+#product-samples {
+    grid-area: 1 / 1 / 1 / 7;
+    padding: 2rem;
+    background-color: var(--orange-01);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.product-samples {
+    width: auto;
+    height: 100%;
+    padding: 2rem;
+}
+
+#product-accessories {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+#product-accessory-item {
+    background-color: red;
+    flex-direction: column;
+    flex: 1 280px;
+    padding: 0;
+    margin: 0;
+}
+
+#product-accessory-header {
+    padding: 8px;
+    position: relative;
+    bottom: 0;
+}
 
 @media (max-width: 767px) {
     /* main nav */
@@ -273,19 +329,40 @@ ul #feature-item {
         background-color: var(--orange-01);
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    section, #hero-items {
+    #hero-feature {
+        grid-area: 1 / 1 / 1 / 7;
         padding: 2rem 1rem 2rem 1rem;
     }
 
     #product-samples {
+        grid-area: 2 / 1 / 2 / 7;
         width: 100%;
         height: 100%;
+        padding: 1rem;
+        background-color: var(--blue-02);
         border: 2px solid red;
         overflow: hidden;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 0.75rem;
+    }
+
+    section, #hero-items {
+        padding: 2rem 1rem 2rem 1rem;
     }
 
     .product-samples {
@@ -293,6 +370,10 @@ ul #feature-item {
         height: auto;
         position: relative;
         left: -45%;
+    }
+
+    #product-accesory-item {
+        flex: 1 160px;
     }
 
     /* main-nav icon */
