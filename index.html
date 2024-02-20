@@ -12,12 +12,11 @@
     <script src="./javascript/nav.js" defer></script>
 </head>
 <body>
+    <div class="body-container">
     <header class="primary-header flex">
         <div>
             <img src="./assets/sam-ordonez-logo.svg" class="logo" alt="Logo for Samson James Ordonez">
         </div>
-
-
 
         <button class="mobile-nav-toggle" 
         aria-controls="primary-navigation">
@@ -29,10 +28,9 @@
           </div>
         </button>
 
-
         <nav>
             <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
-                <li class="active"><a href="index.html">
+                <li><a href="index.html">
                         Home
                     </a>
 
@@ -52,15 +50,15 @@
     <main>
         <section class="full-width grid">
                 <div id="hero-items">
-                <h1>
-                    NOSTALGIATRON
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <button>BUY NOW</button>
+                    <h1>
+                        NOSTALGIATRON; a revolutionary portable handheld device.
+                    </h1>
+                    <p>
+                    Nostalgiatron (N-pocket) combines the best of gaming nostalgia and modern technology. It serves as a versatile
+                    multi-video-game system, a digital audio workstation featuring a built-in synthesizer and sequencer, 
+                    and a loving tribute to the golden era of portable gaming.
+                    </p>
+                    <button class="btn-main">BUY NOW</button>
                 </div>
                 <div id="hero-img">
                     <img src="./assets/nostalgiatron-black.png" alt="Nostalgiatron Black Product" loading="lazy">
@@ -68,177 +66,373 @@
         </section>
 
         <section class="full-width grid">
-            <div id="hero-feature">
+            <div id="product-features">
                 <h1>
                     Just a nostalgic revival... but better.
                 </h1>
                 <ul>
-                    <li id="feature-item">A multi-video-game-system portable handheld</li>
-                    <li id="feature-item">A tribute to portable gaming</li>
-                    <li id="feature-item">And now, a developer platform with openFPGA. The Future of Video Game Preservation.</li>
-                    <li id="feature-item">Out of the box, Pocket is compatible with the 2,780+ Game Boy, Game Boy Color & 
-                        Game Boy Advance game cartridge library. Pocket works with cartridge adapters for other handheld systems,
-                        too. Like Game Gear. Neo Geo Pocket Color. Atari Lynx & more. Completely engineered with two FPGAs.
-                        Drag and drop GB Studio files to play user generated content.</li>
+                    <li id="feature-item">Nostalgiatron features a state-of-the-art 3.5” LCD display with a remarkable 615 pixels per inch (ppi).</li>
+                    <li id="feature-item">With a resolution of 1600x1440, Nostalgiatron offers 10 times the resolution of the original Game Boy, providing unparalleled visual clarity.</li>
+                    <li id="feature-item">The display boasts professional-level color accuracy, dynamic range, and brightness, ensuring an immersive gaming experience.</li>
+                    <li id="feature-item">Crafted with Gorilla® Glass, Nostalgiatron's display offers exceptional durability and scratch resistance, enhancing its longevity.</li>
+                    <li id="feature-item">Nostalgiatron introduces the most advanced display ever seen in a video game system, setting a new standard for gaming visuals.</li>
                 </ul>
-                <button>BUY NOW</button>
+                <button class="btn-secondary">Get your own NOW</button>
             </div>
             <div id="product-samples">
-                <img class="product-samples" src="./assets/nostalgatrion-featured-colors.png" alt="Nostalgiatron in different colours" loading="lazy">
+                <img class="product-samples-photo" src="./assets/nostalgatrion-featured-colors.png" alt="Nostalgiatron in different colours" loading="lazy">
+            </div>
+        </section>
+
+        <section class="full-width grid">
+            <div id="grid-left-text">
+                <h2>
+                    It serves as a versatile multi-video-game system, a digital audio workstation featuring a built-in synthesizer
+                    and sequencer, and a loving tribute to the golden era of portable gaming.
+                </h2>
+            </div>
+            <div id="grid-right-img">
+                <img src="./assets/nostalgiatron-black-and-white.png" alt="Nostalgiatron Black and White Product" loading="lazy">
+            </div>
+        </section>
+
+        <section class="full-width grid">
+            <div id="grid-right-text">
+                <h2>
+                    Right out of the box, the Nostalgiatron offers compatibility with over 2,780 Game Boy, Game Boy Color, and 
+                    Game Boy Advance game cartridges, providing gamers with access to a vast and cherished library of titles. 
+                    Additionally, the Pocket can be adapted to work with cartridges from other beloved handheld systems, 
+                    including but not limited to Game Gear, Neo Geo Pocket Color, and Atari Lynx.
+                </h2>
+            </div>
+            <div id="grid-left-img">
+                <img class="img-cartridge" src="./assets/nostalgiatron-cartridges.png" alt="Nostalgiatron Black and White Product" loading="lazy">
             </div>
         </section>
 
         <section>
-            <h2>Prosuct Accessories</h2>
+            <h2>Product Accessories</h2>
             <article id="product-accessories">
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-white.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Dock, White</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-black.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket, Black</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Clear Hardcase</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Impact Resistant Clear Hardcase</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-gear-adapter.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>Game Gear Adapter</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Nostalgiatron Game Gear Cartridge Adapter</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-white.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Dock, White</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-black.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket, Black</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Clear Hardcase</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Impact Resistant Clear Hardcase</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-gear-adapter.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>Game Gear Adapter</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Nostalgiatron Game Gear Cartridge Adapter</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-white.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Dock, White</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-dock-black.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket, Black</h3>
+                            <h4>$129.99</h4>
+                            <ul>
+                                <li id="accessory-features"> 18W Fast charging Worldwide USB-C Power Supply</li>
+                                <li id="accessory-features"> HDMI Cable</li>
+                                <li id="accessory-features"> USB-C Cable</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>N-Pocket Clear Hardcase</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Impact Resistant Clear Hardcase</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
 
                 <article id="product-accessory-item">
-                    <article id="product-accessory-header">
-                        <h3>P-NAME</h3>
-                        <h4>$99.00</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua.</p>
-                    </article> 
-                        <div id="accessory-wrapper">
-                            <img src="./assets/ghostly-accessory.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                    <div>
+                        <div id="img-accessory-wrapper">
+                            <img src="./assets/accessories/n-gear-adapter.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
+                        <article id="product-accessory-header">
+                            <div id="text-wrapper">
+                            <h3>Game Gear Adapter</h3>
+                            <h4>$29.00</h4>
+                            <ul>
+                                <li id="accessory-features">Nostalgiatron Game Gear Cartridge Adapter</li>
+                            </ul>
+                        </article> 
+                    </div>
+                    <button class="btn-cart">Add to Cart</button>
                 </article>
-               
+                 
             </article>
+        </section>
+
+        <section class="full-width bg-dark-02">
+            <div>
+                <img src="./assets/nostalgiatron-colored-editions.png" alt="Colored  editions for Nostalgiatron" loading="lazy">
+            </div>
         </section>
     </main>
 
+    <footer class="grid">
+        <article class="nav-footer" id="nav-quick-nav">
+            <nav>
+                <h5>
+                    QUICK NAVIGATION
+                </h5>
+                <ul class="footer-navigation">
+                    <li><a href="index.html">
+                            Home
+                        </a>
+
+                    <li><a href="#">
+                            Products
+                        </a>
+                    <li><a href="#">
+                            Lorem Ipsum
+                        </a>
+                    <li><a href="#">
+                            Empty
+                        </a>
+                </ul>
+            </nav>
+        </article>
+
+        <article class="nav-footer" id="nav-gen-support">
+            <nav>
+                <h5>
+                    GENERAL SUPPORT
+                </h5>
+                <ul class="footer-navigation">
+                    <li><a href="#">
+                            Contacts
+                        </a>
+
+                    <li><a href="#">
+                            Returns
+                        </a>
+                    <li><a href="#">
+                            Shippings
+                        </a>
+                    <li><a href="#">
+                            Repairs
+                        </a>
+                </ul>
+            </nav>
+        </article>
+
+        <article class="nav-footer" id="nav-legal">
+            <nav>
+                <h5>
+                    LEGAL
+                </h5>
+                <ul class="footer-navigation">
+                    <li><a href="#">
+                            Legal Terms & Conditions
+                        </a>
+
+                    <li><a href="#">
+                            Privacy Policy
+                        </a>
+                    <li><a href="#">
+                            Download Legal Terms & Conditions
+                        </a>
+                    <li><a href="#">
+                            Download Privacy Policy
+                        </a>
+                </ul>
+            </nav>
+        </article>
+
+        <article class="nav-footer" id="nav-social">
+            <nav>
+                <h5>
+                    SOCIAL LINKS
+                </h5>
+                <ul class="footer-navigation">
+                    <li><a href="#">
+                            Facebook
+                        </a>
+
+                    <li><a href="#">
+                            X / Twitter
+                        </a>
+                    <li><a href="#">
+                            Instagram
+                        </a>
+                    <li><a href="#">
+                            Newsletter
+                        </a>
+                </ul>
+            </nav>
+        </article>
+    </footer>
+</div>
 </body>
 </html>
