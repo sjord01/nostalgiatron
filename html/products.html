@@ -7,112 +7,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">  
-    <title>Document</title>
-    <script src="./javascript/nav.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">  
+    <title>Product Page</title>
+    <script src="..//javascript/nav.js" defer></script>
 </head>
 <body>
     <div class="body-container">
-    <header class="primary-header flex">
+        <header class="primary-header flex">
             <div>
-                <a href="./index.html">
-                <img src="./assets/sam-ordonez-logo.svg" class="logo" alt="Logo for Samson James Ordonez">
+                <a href="../index.html">
+                    <img src="../assets/sam-ordonez-logo.svg" class="logo" alt="Logo for Samson James Ordonez">
                 </a>
             </div>
+    
+            <div class="mobile-nav-toggle" 
+            aria-controls="primary-navigation"
+            role="button">
+                <div id="mobile-nav-dashes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+              </div>
+            </div>
 
-        <div class="mobile-nav-toggle" 
-        aria-controls="primary-navigation"
-        role="button">
-            <div id="mobile-nav-dashes">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-          </div>
-        </div>
-
-        <nav>
-            <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
-                <li><a class="btn-nav" href="index.html">
-                        Home
-                    </a>
-
-                <li><a class="btn-nav" href="./html/products.html">
-                        Products
-                    </a>
-                <li><a class="btn-nav" href="./html/lorem-ipsum.html">
-                        Lorem Ipsum
-                    </a>
-                <li><a class="btn-nav" href="./html/empty.html">
-                        Empty
-                    </a>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="full-width grid">
-                <div id="hero-items">
-                    <h1>
-                        NOSTALGIATRON; a revolutionary portable handheld device.
-                    </h1>
-                    <p>
-                    Nostalgiatron (N-pocket) combines the best of gaming nostalgia and modern technology. It serves as a versatile
-                    multi-video-game system, a digital audio workstation featuring a built-in synthesizer and sequencer, 
-                    and a loving tribute to the golden era of portable gaming.
-                    </p>
-                    <button class="btn-main">BUY NOW</button>
-                </div>
-                <div id="hero-img">
-                    <img src="./assets/nostalgiatron-black.png" alt="Nostalgiatron Black Product" loading="lazy">
-                </div>
-        </section>
-
-        <section class="full-width grid">
-            <div id="product-features">
-                <h1>
-                    Just a nostalgic revival... but better.
-                </h1>
-                <ul>
-                    <li class="feature-item">Nostalgiatron features a state-of-the-art 3.5” LCD display with a remarkable 615 pixels per inch (ppi).</li>
-                    <li class="feature-item">With a resolution of 1600x1440, Nostalgiatron offers 10 times the resolution of the original Game Boy, providing unparalleled visual clarity.</li>
-                    <li class="feature-item">The display boasts professional-level color accuracy, dynamic range, and brightness, ensuring an immersive gaming experience.</li>
-                    <li class="feature-item">Crafted with Gorilla® Glass, Nostalgiatron's display offers exceptional durability and scratch resistance, enhancing its longevity.</li>
-                    <li class="feature-item">Nostalgiatron introduces the most advanced display ever seen in a video game system, setting a new standard for gaming visuals.</li>
+            <nav>
+                <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+                    <li><a class="btn-nav" href="../index.html">
+                            Home
+                        </a>
+    
+                    <li><a class="btn-nav" href="./products.html">
+                            Products
+                        </a>
+                    <li><a class="btn-nav" href="./lorem-ipsum.html">
+                            Lorem Ipsum
+                        </a>
+                    <li><a class="btn-nav" href="./empty.html">
+                            Empty
+                        </a>
                 </ul>
-                <button class="btn-secondary">Get your own NOW</button>
-            </div>
-            <div id="product-samples">
-                <img class="product-samples-photo" src="./assets/nostalgatrion-featured-colors.png" alt="Nostalgiatron in different colours" loading="lazy">
-            </div>
-        </section>
-
-        <section class="full-width grid">
-            <div class="grid-left-text">
-                <h2>
-                    It serves as a versatile multi-video-game system, a digital audio workstation featuring a built-in synthesizer
-                    and sequencer, and a loving tribute to the golden era of portable gaming.
-                </h2>
-            </div>
-            <div class="grid-right-img">
-                <img src="./assets/nostalgiatron-black-and-white.png" alt="Nostalgiatron Black and White Product" loading="lazy">
-            </div>
-        </section>
-
-        <section class="full-width grid">
-            <div class="grid-right-text">
-                <h2>
-                    Right out of the box, the Nostalgiatron offers compatibility with over 2,780 Game Boy, Game Boy Color, and 
-                    Game Boy Advance game cartridges, providing gamers with access to a vast and cherished library of titles. 
-                    Additionally, the Pocket can be adapted to work with cartridges from other beloved handheld systems, 
-                    including but not limited to Game Gear, Neo Geo Pocket Color, and Atari Lynx.
-                </h2>
-            </div>
-            <div class="grid-left-img">
-                <img class="img-cartridge" src="./assets/nostalgiatron-cartridges.png" alt="Nostalgiatron Black and White Product" loading="lazy">
-            </div>
-        </section>
-
+            </nav>
+        </header>
+    <main>
         <section>
             <h2>Product Accessories</h2>
             <div class="product-accessories">
@@ -120,7 +57,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-white.png" alt="N-Pocket Dock, White Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-dock-white.png" alt="N-Pocket Dock, White Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -140,7 +77,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black" loading="lazy">
+                            <img src="../assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -160,7 +97,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Clear Hardcase Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-clear-hardcase.png" alt="Clear Hardcase Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -178,7 +115,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-gear-adapter.png" alt="Game Gear Adapter Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-gear-adapter.png" alt="Game Gear Adapter Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                         <div>
@@ -196,7 +133,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-white.png" alt="N-pocket Dock, White Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-dock-white.png" alt="N-pocket Dock, White Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -216,7 +153,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -236,7 +173,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Clear Hardcase Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-clear-hardcase.png" alt="Clear Hardcase Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -254,7 +191,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-gear-adapter.png" alt="Gear Adapter Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-gear-adapter.png" alt="Gear Adapter Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                         <div>
@@ -272,7 +209,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-white.png" alt="N-Pocket Dock, White Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-dock-white.png" alt="N-Pocket Dock, White Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -292,7 +229,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-dock-black.png" alt="N-Pocket Dock, Black Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -312,7 +249,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-clear-hardcase.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
+                            <img src="../assets/accessories/n-clear-hardcase.png" alt="Ghossly accessory for Nostalgiatron" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                             <div>
@@ -330,7 +267,7 @@
                 <div class="product-accessory-item">
                     <div>
                         <div class="img-accessory-wrapper">
-                            <img src="./assets/accessories/n-gear-adapter.png" alt="Gear Adapter Accessory" loading="lazy">
+                            <img src="../assets/accessories/n-gear-adapter.png" alt="Gear Adapter Accessory" loading="lazy">
                         </div>
                         <article class="product-accessory-header">
                         <div>
@@ -349,7 +286,7 @@
 
         <figure class="full-width bg-dark-02">
             <div>
-                <img src="./assets/nostalgiatron-colored-editions.png" alt="Colored  editions for Nostalgiatron" loading="lazy">
+                <img src="../assets/n-pocket-silver.png" alt="Colored  editions for Nostalgiatron" loading="lazy">
             </div>
         </figure>
     </main>
@@ -361,17 +298,17 @@
             </h5>
             <nav>
                 <ul class="footer-navigation">
-                    <li><a href="./index.html">
+                    <li><a href="../index.html">
                             Home
                         </a>
 
-                    <li><a href="./html/products.html">
+                    <li><a href="./products.html">
                             Products
                         </a>
-                    <li><a href="./html/lorem-ipsum.html">
+                    <li><a href="./lorem-ipsum.html">
                             Lorem Ipsum
                         </a>
-                    <li><a href="./html/empty.html">
+                    <li><a href="./empty.html">
                             Empty
                         </a>
                 </ul>
@@ -447,6 +384,6 @@
             </nav>
         </article>
     </footer>
-</div>
+    </div>
 </body>
 </html>
